@@ -5,6 +5,10 @@ public class DemoUsingFunctionalIF {
 	public static void main(String[] args) {
 		DemoFunctionalInterface a = () -> System.out.println("abc");
 		a.method1();
+		
+		Greeting greeting1 = name -> System.out.println("Xin chao " + name + " From VN with love");
+		greeting1.greeting("AN");
+		greeting1.hello("AN");
 
 		// Error compilor, not functional interface=> can't using lambda
 //		DemoIFWith2Method b = () -> System.out.println("DemoIFWith2Method");
