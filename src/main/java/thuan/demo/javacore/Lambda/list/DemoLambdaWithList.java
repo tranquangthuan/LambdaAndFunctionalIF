@@ -30,6 +30,13 @@ public class DemoLambdaWithList {
 //			return o1.getName().compareTo(o2.getName());
 //		});
 		print(list);
+
+		System.out.println("-----------------");
+		// list.removeIf(st -> st.getAge() == 19);
+
+		list.replaceAll(t -> new Student(t.getId(), t.getName() + " Upate", t.getAge(), t.getAddress()));
+
+		print(list);
 	}
 
 	public static void sortWithComparator(List<Student> list) {
